@@ -1,48 +1,65 @@
-function crearMalla() {
-  const contenedor = document.getElementById("malla-container");
-  const porSemestre = {};
-  ramos.forEach(r => {
-    if (!porSemestre[r.semestre]) porSemestre[r.semestre] = [];
-    porSemestre[r.semestre].push(r);
-  });
-  for (let s = 1; s <= 10; s++) {
-    const columna = document.createElement("div");
-    columna.classList.add("semestre");
-    columna.innerHTML = `<h2>Semestre ${s}</h2>`;
-    (porSemestre[s] || []).forEach(r => {
-      const ramo = document.createElement("div");
-      ramo.classList.add("ramo");
-      ramo.setAttribute("data-nombre", r.nombre);
-      ramo.setAttribute("data-tipo", r.tipo);
-      ramo.setAttribute("data-semestre", s);
-      ramo.setAttribute("data-creditos", r.creditos);
-      ramo.setAttribute("data-prerrequisitos", JSON.stringify(r.prerrequisitos));
-      ramo.textContent = r.nombre;
-      const popup = document.createElement("div");
-      popup.classList.add("creditos-popup");
-      popup.textContent = `${r.creditos} SCT`;
-      ramo.appendChild(popup);
-      ramo.addEventListener("click", () => {
-        if (ramo.classList.contains("aprobado")) return;
-        ramo.classList.add("aprobado");
-        popup.style.display = "block";
-        document.querySelectorAll(".ramo").forEach(other => {
-          if (other.classList.contains("aprobado")) return;
-          const prereqs = JSON.parse(other.getAttribute("data-prerrequisitos"));
-          const aprobados = Array.from(document.querySelectorAll(".ramo.aprobado")).map(e => e.getAttribute("data-nombre"));
-          if (prereqs.every(p => aprobados.includes(p))) {
-            other.style.opacity = "1";
-            other.style.pointerEvents = "auto";
-          }
-        });
-      });
-      if (r.prerrequisitos.length > 0) {
-        ramo.style.opacity = "0.3";
-        ramo.style.pointerEvents = "none";
-      }
-      columna.appendChild(ramo);
-    });
-    contenedor.appendChild(columna);
-  }
+// Crear estructura HTML por semestre
+const contenedor = document.getElementById("malla-container");
+const creditosPorSemestre = {};
+
+for (let i = 1; i <= 10; i++) {
+  const columna = document.createElement("div");
+  columna.classList.add("semestre");
+  columna.dataset.semestre = i;
+
+  const titulo = document.createElement("h2");
+  titulo.textContent = `Semestre ${i}`;
+
+  // Contador de créditos
+  const contador = document.createElement("p");
+  contador.classList.add("contador-creditos");
+  contador.textContent = "Créditos seleccionados: 0";
+  contador.dataset.creditos = "0";
+
+  columna.appendChild(titulo);
+  columna.appendChild(contador);
+  contenedor.appendChild(columna);
 }
-window.onload = crearMalla;
+
+// Mostrar ramos en sus semestres
+ramos.forEach((ramo) => {
+  const columna = document.querySelector(`.semestre[data-semestre="${ramo.semestre}"]`);
+
+  const tarjeta = document.createElement("div");
+  tarjeta.classList.add("ramo");
+  tarjeta.dataset.tipo = ramo.tipo;
+  tarjeta.textContent = ramo.nombre;
+
+  // Mostrar créditos en un popup al pasar el mouse
+  const popup = document.createElement("span");
+  popup.classList.add("creditos-popup");
+  popup.textContent = `${ramo.creditos} créditos`;
+  tarjeta.appendChild(popup);
+
+  tarjeta.addEventListener("mouseenter", () => {
+    popup.style.display = "block";
+  });
+
+  tarjeta.addEventListener("mouseleave", () => {
+    popup.style.display = "none";
+  });
+
+  // Al hacer clic, marcar como aprobado y sumar créditos
+  tarjeta.addEventListener("click", () => {
+    tarjeta.classList.toggle("aprobado");
+
+    const contador = columna.querySelector(".contador-creditos");
+    let total = parseInt(contador.dataset.creditos);
+
+    if (tarjeta.classList.contains("aprobado")) {
+      total += ramo.creditos;
+    } else {
+      total -= ramo.creditos;
+    }
+
+    contador.dataset.creditos = total;
+    contador.textContent = `Créditos seleccionados: ${total}`;
+  });
+
+  columna.appendChild(tarjeta);
+});
