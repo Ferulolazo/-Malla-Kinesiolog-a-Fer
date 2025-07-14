@@ -46,6 +46,7 @@ const ramos = [
     semestre: 1,
     creditos: 2,
     tipo: "formacion",
+    prerrequisitos: []
   },
   {
     nombre: "Inglés I",
@@ -381,7 +382,7 @@ const ramos = [
     semestre: 7,
     creditos: 5,
     tipo: "investigación",
-    prerrequisitos: ["Diseño y formulación de proyectos de investigación"]
+    prerrequisitos: ["Diseño y formación de proyectos de investigación"]
   },
   {
     nombre: "Metodologías de enseñanza aprendizaje",
@@ -465,7 +466,7 @@ const ramos = [
     semestre: 9,
     creditos: 2,
     tipo: "investigación",
-    prerrequisitos: ["Ejecución de proyectos de investigación II"]
+    prerrequisitos: ["Ejecución de proyecto de investigación II"]
   },
   {
     nombre: "Intervención profesional II",
