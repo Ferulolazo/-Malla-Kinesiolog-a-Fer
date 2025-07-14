@@ -10,7 +10,6 @@ for (let i = 1; i <= 10; i++) {
   const titulo = document.createElement("h2");
   titulo.textContent = `Semestre ${i}`;
 
-  // Contador de créditos
   const contador = document.createElement("p");
   contador.classList.add("contador-creditos");
   contador.textContent = "Créditos seleccionados: 0";
@@ -21,7 +20,7 @@ for (let i = 1; i <= 10; i++) {
   contenedor.appendChild(columna);
 }
 
-// Mostrar ramos en sus semestres
+// Mostrar los ramos por semestre
 ramos.forEach((ramo) => {
   const columna = document.querySelector(`.semestre[data-semestre="${ramo.semestre}"]`);
 
@@ -30,7 +29,6 @@ ramos.forEach((ramo) => {
   tarjeta.dataset.tipo = ramo.tipo;
   tarjeta.textContent = ramo.nombre;
 
-  // Mostrar créditos en un popup al pasar el mouse
   const popup = document.createElement("span");
   popup.classList.add("creditos-popup");
   popup.textContent = `${ramo.creditos} créditos`;
@@ -44,7 +42,6 @@ ramos.forEach((ramo) => {
     popup.style.display = "none";
   });
 
-  // Al hacer clic, marcar como aprobado y sumar créditos
   tarjeta.addEventListener("click", () => {
     tarjeta.classList.toggle("aprobado");
 
