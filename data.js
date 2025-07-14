@@ -202,7 +202,7 @@ const ramos = [
     prerrequisitos: ["Bases integradas de infectología, inmunología y farmacología general" , "Fisiología de sistemas"]
   },
   {
-    nombre: "Lectura y análisis crítico de estudios científicos",
+    nombre: "Lectura crítica de estudios científicos",
     semestre: 4,
     creditos: 2,
     tipo: "investigacion",
@@ -318,7 +318,7 @@ const ramos = [
     semestre: 6,
     creditos: 3,
     tipo: "obligatorio",
-    prerrequisitos: ["Evaluación e intervención en cuidados respiratorios I" , 'Evaluación e intervención en Neurokinesiología I" , "Evaluación e intervención en Músculo - Esquelético I"]
+    prerrequisitos: ["Evaluación e intervención en cuidados respiratorios I" , "Evaluación e intervención en Neurokinesiología I" , "Evaluación e intervención en Músculo - Esquelético I"]
   },
   {
     nombre: "Actividad física y deportes",
@@ -339,7 +339,7 @@ const ramos = [
     semestre: 6,
     creditos: 5,
     tipo: "investigacion",
-    prerrequisitos: ["Revisión Bibliográfica"]
+    prerrequisitos: ["Revisión bibliográfica"]
   },
   {
     nombre: "Intervención profesional en contexto I",
