@@ -118,8 +118,7 @@ const ramos = [
     tipo: "formacion",
     prerrequisitos: ["Inglés I"]
   },
-  <script src="data.js"></script>
-    {
+  {
     nombre: "Neurofisiología",
     semestre: 3,
     creditos: 5,
@@ -238,7 +237,7 @@ const ramos = [
     tipo: "formacion",
     prerrequisitos: ["Inglés III"]
   },
-  {<script src="data.js"></script>
+  {
     nombre: "Kinesiología en el adulto y adulto mayor I",
     semestre: 5,
     creditos: 6,
@@ -336,8 +335,7 @@ const ramos = [
     tipo: "formacion",
     prerrequisitos: []
   },
-    <script src="data.js"></script>
-    {
+  {
     nombre: "Práctica profesional I",
     semestre: 7,
     creditos: 12,
@@ -379,8 +377,7 @@ const ramos = [
     tipo: "investigacion",
     prerrequisitos: ["Seminario de grado I"]
   },
-    <script src="data.js"></script>
-    {
+  {
     nombre: "Internado profesional I",
     semestre: 9,
     creditos: 15,
@@ -393,5 +390,5 @@ const ramos = [
     creditos: 15,
     tipo: "obligatorio",
     prerrequisitos: ["Internado profesional I"]
-  }
-];
+  },
+  ];
