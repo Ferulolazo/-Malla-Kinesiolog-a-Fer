@@ -182,7 +182,7 @@ const ramos = [
     prerrequisitos: ["Inglés II"]
   },
   {
-    nombre: "Kinesiologia del desarrollo psicomotor",
+    nombre: "Kinesiología del desarrollo psicomotor",
     semestre: 4,
     creditos: 3,
     tipo: "obligatorio",
@@ -213,7 +213,7 @@ const ramos = [
     nombre: "Examen de la condición física y la conducta motora",
     semestre: 4,
     creditos: 4,
-    tipo: "formacion",
+    tipo: "obligatorio",
     prerrequisitos: ["Examen Kinésico Básico"]
   },
   {
@@ -256,7 +256,7 @@ const ramos = [
     semestre: 5,
     creditos: 8,
     tipo: "obligatorio",
-    prerrequisitos: ["Procedimiento terapéuticos básicos y generales"]
+    prerrequisitos: ["Procedimientos terapéuticos básicos y generales"]
   },
   {
     nombre: "Efectos de la actividad física en la salud",
@@ -277,7 +277,7 @@ const ramos = [
     semestre: 5,
     creditos: 2,
     tipo: "investigacion",
-    prerrequisitos: ["Análisis epidemiológico"]
+    prerrequisitos: ["Análisis Epidemiológico"]
   },
   {
     nombre: "Revisión bibliográfica",
@@ -326,7 +326,7 @@ const ramos = [
     semestre: 6,
     creditos: 2,
     tipo: "obligatorio",
-    prerrequisitos: ["Educación Física II" , "Efectos de actividad física en salud"]
+    prerrequisitos: ["Educación Física II" , "Efectos de actividad física en la salud"]
   },
   {
     nombre: "Responsabilidad del ejercicio profesional",
@@ -347,7 +347,7 @@ const ramos = [
     semestre: 7,
     creditos: 10,
     tipo: "obligatorio",
-    prerrequisitos: ["Efectos de actividad física en la salud", "Evaluación e intervención en cuidados respiratorios II", "Evaluación e intervención en Neurokinesiología II", "Evaluación e intervención en Músculo - Esquelético II"]
+    prerrequisitos: ["Efectos de actividad física en la salud", "Evaluación e intervención en cuidados respiratorios II" , "Evaluación e intervención en Neurokinesiología II", "Evaluación e intervención en Músculo - Esquelético II"]
   },
   {
     nombre: "Análisis de la relación persona - entorno",
@@ -396,7 +396,7 @@ const ramos = [
     semestre: 8,
     creditos: 8,
     tipo: "obligatorio",
-    prerrequisitos: ["Evaluación e intervención en cuidados respiratorios II", "Evaluación e intervención en Neurokinesiología II", "Evaluación e intervención en Músculo - Esquelético II"]
+    prerrequisitos: ["Evaluación e intervención en cuidados respiratorios II", "Evaluación e intervención en Neurokinesiología II" , "Evaluación e intervención en Músculo - Esquelético II"]
   },
   {
     nombre: "Evaluación Ergonómica",
