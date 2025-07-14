@@ -42,7 +42,7 @@ h1 {
 }
 
 .ramo {
-  background-color: #ffe6f0;
+  background-color: #FCD5EC;
   border: 1px solid #ccc;
   margin-bottom: 10px;
   padding: 8px;
@@ -60,15 +60,15 @@ h1 {
 
 .ramo.aprobado {
   text-decoration: line-through;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .ramo[data-tipo="formacion"] {
-  background-color: #e0e0e0;
+  background-color: #E0E0E0;
 }
 
 .ramo[data-tipo="investigacion"] {
-  background-color: #d6f0ff;
+  background-color: #E4F9DC;
 }
 
 .ramo[data-tipo="electivo"] {
