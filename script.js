@@ -19,7 +19,6 @@ for (let i = 1; i <= 10; i++) {
   columna.appendChild(contador);
   contenedor.appendChild(columna);
 }
-
 // Mostrar los ramos por semestre
 ramos.forEach((ramo) => {
   const columna = document.querySelector(`.semestre[data-semestre="${ramo.semestre}"]`);
