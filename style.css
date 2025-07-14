@@ -4,19 +4,16 @@ body {
   padding: 20px;
   margin: 0;
 }
-
 h1 {
   text-align: center;
   margin-bottom: 30px;
 }
-
 #malla-container {
   display: flex;
   gap: 10px;
   overflow-x: auto;
   padding-bottom: 30px;
 }
-
 .semestre {
   display: flex;
   flex-direction: column;
@@ -24,7 +21,6 @@ h1 {
   width: 200px;
   min-width: 200px;
 }
-
 .semestre h2 {
   text-align: center;
   margin-bottom: 10px;
@@ -32,9 +28,8 @@ h1 {
   padding: 5px;
   border-radius: 5px;
 }
-
 .ramo {
-  background-color: #ffe6f0; /* por defecto: rosado pastel */
+  background-color: #ffe6f0; /* rosado pastel por defecto */
   border: 1px solid #ccc;
   border-left: 8px solid transparent;
   margin-bottom: 10px;
@@ -45,28 +40,22 @@ h1 {
   transition: all 0.2s ease-in-out;
   position: relative;
 }
-
 .ramo:hover {
   transform: scale(1.03);
 }
-
 .ramo.aprobado {
   text-decoration: line-through;
   opacity: 0.5;
 }
-
 .ramo[data-tipo="formacion"] {
   background-color: #e0e0e0;
 }
-
 .ramo[data-tipo="investigacion"] {
   background-color: #d6f0ff;
 }
-
 .ramo[data-tipo="electivo"] {
   background-color: #f0d6ff;
 }
-
 .creditos-popup {
   position: absolute;
   top: -5px;
