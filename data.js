@@ -2,12 +2,12 @@ const ramos = [
   {
     nombre: "Bases integradas de química, bioquímica, biología celular y genética",
     semestre: 1,
-    creditos: 5,
+    creditos: 11,
     tipo: "obligatorio",
     prerrequisitos: []
   },
   {
-    nombre: "Física para el estudio de la kinesiología",
+    nombre: "Física",
     semestre: 1,
     creditos: 3,
     tipo: "obligatorio",
@@ -16,14 +16,14 @@ const ramos = [
   {
     nombre: "Introducción a la kinesiología",
     semestre: 1,
-    creditos: 3,
+    creditos: 1,
     tipo: "obligatorio",
     prerrequisitos: []
   },
   {
     nombre: "Anatomía estructural y funcional I",
     semestre: 1,
-    creditos: 5,
+    creditos: 6,
     tipo: "obligatorio",
     prerrequisitos: []
   },
@@ -37,7 +37,7 @@ const ramos = [
   {
     nombre: "Estrategias de búsqueda bibliográfica",
     semestre: 1,
-    creditos: 2,
+    creditos: 3,
     tipo: "investigacion",
     prerrequisitos: []
   },
@@ -46,7 +46,6 @@ const ramos = [
     semestre: 1,
     creditos: 2,
     tipo: "formacion",
-    prerrequisitos: []
   },
   {
     nombre: "Inglés I",
@@ -56,23 +55,30 @@ const ramos = [
     prerrequisitos: []
   },
   {
+    nombre: "Principios de evolución",
+    semestre: 2,
+    creditos: 4,
+    tipo: "obligatorio",
+    prerrequisitos: []
+  },
+  {
     nombre: "Fisiología general",
     semestre: 2,
-    creditos: 5,
+    creditos: 4,
     tipo: "obligatorio",
-    prerrequisitos: ["Bases integradas de química, bioquímica, biología celular y genética"]
+    prerrequisitos: ["Bases integradas de química, bioquímica, biología celular y genética" , "Física"]
   },
   {
     nombre: "Neuroanatomía",
     semestre: 2,
-    creditos: 5,
+    creditos: 2,
     tipo: "obligatorio",
-    prerrequisitos: ["Anatomía estructural y funcional I"]
+    prerrequisitos: []
   },
   {
     nombre: "Anatomía estructural y funcional II",
     semestre: 2,
-    creditos: 5,
+    creditos: 7,
     tipo: "obligatorio",
     prerrequisitos: ["Anatomía estructural y funcional I"]
   },
@@ -85,17 +91,17 @@ const ramos = [
   },
   {
     nombre: "Educación física I",
-    semestre: 2,
+    semestre: 3,
     creditos: 2,
     tipo: "obligatorio",
     prerrequisitos: []
   },
   {
-    nombre: "Biomecánica, evaluación y preparación física I",
+    nombre: "Biomecánica, lesión y reparación tisular",
     semestre: 2,
     creditos: 3,
     tipo: "obligatorio",
-    prerrequisitos: ["Introducción al estudio del movimiento humano"]
+    prerrequisitos: ["Estructura y función tisular"]
   },
   {
     nombre: "Lectura comprensiva de artículos científicos",
@@ -119,46 +125,46 @@ const ramos = [
     prerrequisitos: ["Inglés I"]
   },
   {
-    nombre: "Neurofisiología",
-    semestre: 3,
-    creditos: 5,
-    tipo: "obligatorio",
-    prerrequisitos: ["Fisiología general", "Neuroanatomía"]
-  },
-  {
-    nombre: "Fisiología del ejercicio",
+    nombre: "Fisiología de Sistemas",
     semestre: 3,
     creditos: 5,
     tipo: "obligatorio",
     prerrequisitos: ["Fisiología general"]
   },
   {
-    nombre: "Crecimiento, desarrollo y aprendizaje motor",
+    nombre: "Bases integradas de infectología, inmunología y farmacología general",
     semestre: 3,
-    creditos: 5,
+    creditos: 6,
+    tipo: "obligatorio",
+    prerrequisitos: ["Fisiología general" , "Neuroanatomía"]
+  },
+  {
+    nombre: "Control y aprendizaje motor",
+    semestre: 3,
+    creditos: 4,
     tipo: "obligatorio",
     prerrequisitos: []
   },
   {
     nombre: "Educación física II",
-    semestre: 3,
+    semestre: 5,
     creditos: 2,
     tipo: "obligatorio",
     prerrequisitos: ["Educación física I"]
   },
   {
-    nombre: "Biomecánica, evaluación y preparación física II",
+    nombre: "Examen Kinésico Básico",
     semestre: 3,
     creditos: 5,
     tipo: "obligatorio",
-    prerrequisitos: ["Biomecánica, evaluación y preparación física I"]
+    prerrequisitos: ["Biomecánica, lesión y reparación tisular" , "Anatomía estructural y funcional II"]
   },
   {
-    nombre: "Kinesiología general",
+    nombre: "Fundamentos de la investigación científica",
     semestre: 3,
-    creditos: 4,
-    tipo: "obligatorio",
-    prerrequisitos: ["Introducción a la kinesiología"]
+    creditos: 5,
+    tipo: "investigación",
+    prerrequisitos: []
   },
   {
     nombre: "Cursos de formación general III",
@@ -175,46 +181,25 @@ const ramos = [
     prerrequisitos: ["Inglés II"]
   },
   {
-    nombre: "Control motor",
-    semestre: 4,
-    creditos: 5,
-    tipo: "obligatorio",
-    prerrequisitos: ["Neurofisiología"]
-  },
-  {
-    nombre: "Evaluación kinésica funcional I",
-    semestre: 4,
-    creditos: 5,
-    tipo: "obligatorio",
-    prerrequisitos: ["Biomecánica, evaluación y preparación física II"]
-  },
-  {
-    nombre: "Kinesiología en ciclo vital",
-    semestre: 4,
-    creditos: 5,
-    tipo: "obligatorio",
-    prerrequisitos: ["Crecimiento, desarrollo y aprendizaje motor"]
-  },
-  {
-    nombre: "Psicología y neurociencias del comportamiento",
-    semestre: 4,
-    creditos: 4,
-    tipo: "obligatorio",
-    prerrequisitos: []
-  },
-  {
-    nombre: "Educación física III",
-    semestre: 4,
-    creditos: 2,
-    tipo: "obligatorio",
-    prerrequisitos: ["Educación física II"]
-  },
-  {
-    nombre: "Salud pública",
+    nombre: "Kinesiologia del desarrollo psicomotor",
     semestre: 4,
     creditos: 3,
     tipo: "obligatorio",
-    prerrequisitos: []
+    prerrequisitos: ["Control y aprendizaje motor"]
+  },
+  {
+    nombre: "Procedimientos terapéuticos básicos y generales",
+    semestre: 4,
+    creditos: 7,
+    tipo: "obligatorio",
+    prerrequisitos: ["Introducción al estudio del movimiento humano" , "Examen Kinésico Básico"]
+  },
+  {
+    nombre: "Fisiopatología y farmacología de sistemas",
+    semestre: 4,
+    creditos: 6,
+    tipo: "obligatorio",
+    prerrequisitos: ["Bases integradas de infectología, inmunología y farmacología general" , "Fisiología de sistemas"]
   },
   {
     nombre: "Lectura y análisis crítico de estudios científicos",
@@ -222,6 +207,20 @@ const ramos = [
     creditos: 2,
     tipo: "investigacion",
     prerrequisitos: ["Lectura comprensiva de artículos científicos"]
+  },
+  {
+    nombre: "Examen de la condición física y la conducta motora",
+    semestre: 4,
+    creditos: 4,
+    tipo: "formacion",
+    prerrequisitos: ["Examen Kinésico Básico"]
+  },
+  {
+    nombre: "Análisis Epidemiológico",
+    semestre: 4,
+    creditos: 2,
+    tipo: "investigación",
+    prerrequisitos: []
   },
   {
     nombre: "Cursos de formación general IV",
@@ -238,32 +237,32 @@ const ramos = [
     prerrequisitos: ["Inglés III"]
   },
   {
-    nombre: "Kinesiología en el adulto y adulto mayor I",
+    nombre: "Evaluación e intervención en cuidados respiratorios I",
     semestre: 5,
-    creditos: 6,
+    creditos: 4,
     tipo: "obligatorio",
-    prerrequisitos: ["Kinesiología general", "Kinesiología en ciclo vital"]
+    prerrequisitos: ["Fisiopatología y farmacología de sistemas", "Examen de la condición física y la conducta motora"]
   },
   {
-    nombre: "Kinesiología en el niño I",
+    nombre: "Evaluación e intervención en Neurokinesiología I",
     semestre: 5,
-    creditos: 6,
+    creditos: 4,
     tipo: "obligatorio",
-    prerrequisitos: ["Kinesiología general", "Kinesiología en ciclo vital"]
+    prerrequisitos: ["Kinesiología del desarrollo psicomotor"]
   },
   {
-    nombre: "Evaluación kinésica funcional II",
+    nombre: "Evaluación e intervención en Músculo - Esquelético I",
     semestre: 5,
-    creditos: 5,
+    creditos: 8,
     tipo: "obligatorio",
-    prerrequisitos: ["Evaluación kinésica funcional I"]
+    prerrequisitos: ["Procedimiento terapéuticos básicos y generales"]
   },
   {
-    nombre: "Electivo profesional I",
+    nombre: "Efectos de la actividad física en la salud",
     semestre: 5,
-    creditos: 3,
+    creditos: 4,
     tipo: "electivo",
-    prerrequisitos: []
+    prerrequisitos: ["Fisiopatología y farmacología de sistemas" , "Examen de la condición física y la conducta motora"]
   },
   {
     nombre: "Intervención kinésica I",
@@ -273,122 +272,228 @@ const ramos = [
     prerrequisitos: []
   },
   {
-    nombre: "Metodología de la investigación cuantitativa",
-    semestre: 5,
-    creditos: 3,
-    tipo: "investigacion",
-    prerrequisitos: []
-  },
-  {
-    nombre: "Cursos de formación general V",
+    nombre: "Análisis del modelo de salud chileno",
     semestre: 5,
     creditos: 2,
-    tipo: "formacion",
+    tipo: "investigacion",
+    prerrequisitos: ["Análisis epidemiológico"]
+  },
+  {
+    nombre: "Revisión bibliográfica",
+    semestre: 5,
+    creditos: 2,
+    tipo: "investigacion",
+    prerrequisitos: ["Lectura crítica de artículos científicos"]
+  },
+  {
+    nombre: "Módulo integrado interdisciplinario y multiprofesional I",
+    semestre: 5,
+    creditos: 4,
+    tipo: "formación",
     prerrequisitos: []
-  },
+  },   
   {
-    nombre: "Kinesiología en el adulto y adulto mayor II",
-    semestre: 6,
-    creditos: 6,
-    tipo: "obligatorio",
-    prerrequisitos: ["Kinesiología en el adulto y adulto mayor I"]
-  },
-  {
-    nombre: "Kinesiología en el niño II",
-    semestre: 6,
-    creditos: 6,
-    tipo: "obligatorio",
-    prerrequisitos: ["Kinesiología en el niño I"]
-  },
-  {
-    nombre: "Psicología clínica y salud mental",
-    semestre: 6,
-    creditos: 3,
-    tipo: "obligatorio",
-    prerrequisitos: ["Psicología y neurociencias del comportamiento"]
-  },
-  {
-    nombre: "Electivo profesional II",
-    semestre: 6,
-    creditos: 3,
-    tipo: "electivo",
-    prerrequisitos: []
-  },
-  {
-    nombre: "Intervención kinésica II",
+    nombre: "Evaluación e intervención en cuidados respiratorios II",
     semestre: 6,
     creditos: 4,
     tipo: "obligatorio",
-    prerrequisitos: ["Intervención kinésica I"]
+    prerrequisitos: ["Evaluación e intervención en cuidados respiratorios I"] 
   },
   {
-    nombre: "Metodología de la investigación cualitativa",
+    nombre: "Evaluación e intervención en Neurokinesiología II",
+    semestre: 6,
+    creditos: 4,
+    tipo: "obligatorio",
+    prerrequisitos: ["Evaluación e intervención en Neurokinesiología I"]
+  },
+  {
+    nombre: "Evaluación e intervención en Músculo - Esquelético II",
+    semestre: 6,
+    creditos: 8,
+    tipo: "obligatorio",
+    prerrequisitos: ["Evaluación e intervención en Músculo - Esquelético I"]
+  },
+  {
+    nombre: "Razonamiento Clínico",
     semestre: 6,
     creditos: 3,
-    tipo: "investigacion",
-    prerrequisitos: ["Metodología de la investigación cuantitativa"]
+    tipo: "obligatorio",
+    prerrequisitos: ["Evaluación e intervención en cuidados respiratorios I" , 'Evaluación e intervención en Neurokinesiología I" , "Evaluación e intervención en Músculo - Esquelético I"]
   },
   {
-    nombre: "Cursos de formación general VI",
+    nombre: "Actividad física y deportes",
     semestre: 6,
     creditos: 2,
-    tipo: "formacion",
-    prerrequisitos: []
-  },
-  {
-    nombre: "Práctica profesional I",
-    semestre: 7,
-    creditos: 12,
     tipo: "obligatorio",
-    prerrequisitos: ["Kinesiología en el adulto y adulto mayor II", "Kinesiología en el niño II"]
+    prerrequisitos: ["Educación Física II" , "Efectos de actividad física en salud"]
   },
   {
-    nombre: "Electivo profesional III",
-    semestre: 7,
-    creditos: 3,
-    tipo: "electivo",
-    prerrequisitos: []
-  },
-  {
-    nombre: "Seminario de grado I",
-    semestre: 7,
-    creditos: 3,
-    tipo: "investigacion",
-    prerrequisitos: ["Metodología de la investigación cualitativa"]
-  },
-  {
-    nombre: "Práctica profesional II",
-    semestre: 8,
-    creditos: 12,
+    nombre: "Responsabilidad del ejercicio profesional",
+    semestre: 6,
+    creditos: 2,
     tipo: "obligatorio",
-    prerrequisitos: ["Práctica profesional I"]
-  },
-  {
-    nombre: "Electivo profesional IV",
-    semestre: 8,
-    creditos: 3,
-    tipo: "electivo",
     prerrequisitos: []
   },
   {
-    nombre: "Seminario de grado II",
-    semestre: 8,
-    creditos: 3,
+    nombre: "Diseño y formación de proyectos de investigación",
+    semestre: 6,
+    creditos: 5,
     tipo: "investigacion",
-    prerrequisitos: ["Seminario de grado I"]
+    prerrequisitos: ["Revisión Bibliográfica"]
   },
   {
-    nombre: "Internado profesional I",
+    nombre: "Intervención profesional en contexto I",
+    semestre: 7,
+    creditos: 10,
+    tipo: "obligatorio",
+    prerrequisitos: ["Efectos de actividad física en la salud", "Evaluación e intervención en cuidados respiratorios II", "Evaluación e intervención en Neurokinesiología II", "Evaluación e intervención en Músculo - Esquelético II"]
+  },
+  {
+    nombre: "Análisis de la relación persona - entorno",
+    semestre: 7,
+    creditos: 2,
+    tipo: "obligatorio",
+    prerrequisitos: ["Evaluación e intervención en cuidados respiratorios II", "Evaluación e intervención en Neurokinesiología II", "Evaluación e intervención en Músculo - Esquelético II"]
+  },
+  {
+    nombre: "Estrategias deportivas y recreativas",
+    semestre: 7,
+    creditos: 2,
+    tipo: "obligatorio",
+    prerrequisitos: ["Actividad física y deportes"]
+  },
+  {
+    nombre: "Determinantes sociales de la salud",
+    semestre: 7,
+    creditos: 4,
+    tipo: "investigacion",
+    prerrequisitos: ["Análisis del modelo de salud chileno"]
+  },
+  {
+    nombre: "Conceptos básicos de la administración en salud",
+    semestre: 7,
+    creditos: 3,
+    tipo: "investigación",
+    prerrequisitos: ["Análisis del modelo de salud chileno"]
+  },
+  {
+    nombre: "Ejecución de proyecto de investigación I",
+    semestre: 7,
+    creditos: 5,
+    tipo: "investigación",
+    prerrequisitos: ["Diseño y formulación de proyectos de investigación"]
+  },
+  {
+    nombre: "Metodologías de enseñanza aprendizaje",
+    semestre: 7,
+    creditos: 2,
+    tipo: "investigacion",
+    prerrequisitos: []
+  },
+  {
+    nombre: "Intervención profesional en contexto II",
+    semestre: 8,
+    creditos: 8,
+    tipo: "obligatorio",
+    prerrequisitos: ["Evaluación e intervención en cuidados respiratorios II", "Evaluación e intervención en Neurokinesiología II", "Evaluación e intervención en Músculo - Esquelético II"]
+  },
+  {
+    nombre: "Evaluación Ergonómica",
+    semestre: 8,
+    creditos: 3,
+    tipo: "obligatorio",
+    prerrequisitos: ["Análisis de la relación persona - entorno"]
+  },
+  {
+    nombre: "Estrategias deportivas y recreativas aplicadas",
+    semestre: 8,
+    creditos: 2,
+    tipo: "obligatorio",
+    prerrequisitos: ["Estrategias deportivas y recreativas"]
+  },
+  {
+    nombre: "Programas de promoción y prevención en salud",
+    semestre: 8,
+    creditos: 3,
+    tipo: "investigación",
+    prerrequisitos: ["Determinantes sociales de la salud"]
+  },
+  {
+    nombre: "Proyectos de emprendimiento",
+    semestre: 8,
+    creditos: 2,
+    tipo: "investigación",
+    prerrequisitos: ["Conceptos básicos de administración en salud"]
+  },
+  {
+    nombre: "Ejecución de proyecto de investigación II",
+    semestre: 8,
+    creditos: 5,
+    tipo: "investigación",
+    prerrequisitos: ["Ejecución de proyecto de investigación I"]
+  },
+  {
+    nombre: "Aplicación básica de metodologías docentes",
+    semestre: 8,
+    creditos: 2,
+    tipo: "investigación",
+    prerrequisitos: ["Metodologías de enseñanza aprendizaje"]
+  },
+  {
+    nombre: "Módulo integrado interdisciplinario, multiprofesional II",
+    semestre: 8,
+    creditos: 5,
+    tipo: "formación",
+    prerrequisitos: ["Módulo integrado interdisciplinario, multiprofesional I"]
+  },
+  {
+    nombre: "Intervención profesional I",
     semestre: 9,
-    creditos: 15,
+    creditos: 25,
     tipo: "obligatorio",
-    prerrequisitos: ["Práctica profesional II"]
+    prerrequisitos: ["Intervención profesional en contexto II"]
   },
   {
-    nombre: "Internado profesional II",
-    semestre: 10,
-    creditos: 15,
+    nombre: "Proyectos de intervención ergonómica",
+    semestre: 9,
+    creditos: 3,
     tipo: "obligatorio",
-    prerrequisitos: ["Internado profesional I"]
+    prerrequisitos: ["Evaluación Ergonómica"]
   },
-  ];
+  {
+    nombre: "Comunicación científica",
+    semestre: 9,
+    creditos: 2,
+    tipo: "investigación",
+    prerrequisitos: ["Ejecución de proyectos de investigación II"]
+  },
+  {
+    nombre: "Intervención profesional II",
+    semestre: 10,
+    creditos: 22,
+    tipo: "obligatorio",
+    prerrequisitos: ["Intervención profesional I"]
+  },
+  {
+    nombre: "Cursos de profundización disciplinar y profesional",
+    semestre: 10,
+    creditos: 4,
+    tipo: "obligatorio",
+    prerrequisitos: ["Intervención profesional en contexto I", "Intervención profesional en contexto II"]
+  },
+  {
+    nombre: "Intervención en salud comunitaria",
+    semestre: 10,
+    creditos: 2,
+    tipo: "investigación",
+    prerrequisitos: ["Programas de promoción y prevención en salud"]
+  },
+  {
+    nombre: "Administración en salud",
+    semestre: 10,
+    creditos: 2,
+    tipo: "investigación",
+    prerrequisitos: ["Conceptos básicos de administración en salud"]
+  },
+  {
+
