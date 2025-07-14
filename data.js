@@ -496,4 +496,5 @@ const ramos = [
     prerrequisitos: ["Conceptos básicos de administración en salud"]
   },
   {
+  ];
 
